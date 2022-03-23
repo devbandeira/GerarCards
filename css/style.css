@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: rgba(211, 175, 175, 0.171);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 800;
+}
+
+/* CSS PARA IPHONE SE */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0em 0em 1em;
+    width: 20em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-image: linear-gradient(133deg, rgb(231, 212, 228), rgb(240, 251, 255));
+}
+
+label {
+    display: block;
+    margin-bottom: 0.51em;
+    text-align: center;
+}
+
+.handleInform {
+    margin: 1em 1em 0 1em;
+}
+
+input,
+textarea {
+    border-radius: 0.3em;
+    padding: 0.3em;
+    width: 20em;
+    background-color: transparent;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+textarea {
+    resize: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.3em;
+}
+
+.div-btn {
+    display: block;
+    margin: 0.3em auto;
+    font-weight: bold;
+
+}
+
+button {
+    border-radius: 0.3em;
+    padding: 0.3em;
+    width: 5em;
+    background-color: pink;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(243, 160, 174);
+}
+
+hr{
+    background-color: black;
+    size: 10px;
+    width: 2px;
+    margin: 1em;
+    z-index: 2;
+}
+
+/* CSS CARDS PARA IPHONE SE*/
+
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  CARD */
+
+.card {
+    border-radius: 0.4em;
+    box-shadow: 0.5em 0.5em 0.6em 0em rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 15em;
+    height: 20em;
+    transition: all 0.3s ease-out;
+    overflow-y: auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card p {
+    color: #a3a5ae;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.image {
+    float: right;
+    max-width: 11em;
+    max-height: 11em;
+    margin: 1em 0em 1em 0em;
+}
+
+.green {
+    border-left: 0.3em solid #3bb54a;
+}
+
+.atributeTitle{
+    margin: 0em 1em 0em 1em;
+}
+
+.reset {
+    display: none;
+}
+
+.divMaster {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 376px) {
+    .divMaster {
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em auto;
+        width: 20em;
+        padding: 1em;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 1em;
+        background-image: linear-gradient(133deg, rgb(231, 212, 228), rgb(240, 251, 255));
+    }
+  }
+
+@media(max-width:693px) {
+    .divMaster {
+        display: flex;
+        flex-direction: column;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em auto;
+        width: 20em;
+        padding: 1em;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 1em;
+        background-image: linear-gradient(133deg, rgb(231, 212, 228), rgb(240, 251, 255));
+    }
+
+}

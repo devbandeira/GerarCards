@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+
+    <!-- IMPORTAÇÃO CSS & FAVICON -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon"
+        href="https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/favicon-icons/color/airline.png"
+        type="image/x-icon" />
+
+    <!-- IMPORTAÇÃO GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Red+Hat+Mono:ital,wght@0,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- DIV DO FORMULARIO -->
+    <div class="divMaster">
+        <div class="formin">
+            <form action="./nenhum" method="post" id="formInput">
+                <h2>PREENCHA OS CAMPOS</h2>
+                <div class="handleInform">
+                    <label for="title">Título:</label>
+                    <input type="text" id="title" placeholder="Título" />
+                </div>
+                <br />
+
+                <div class="handleInform">
+                    <label for="description">Descrição:</label>
+                    <textarea name="description" id="description" cols="2" rows="7" maxlength="50"
+                        placeholder="Descreva sobre o seu card em 50 digitos!"></textarea>
+                </div>
+                <br />
+
+
+                <div class="handleInform">
+                    <label for="url">URL:</label>
+                    <input type="url" id="url" placeholder="Link da URL da imagem" />
+                </div>
+                <br />
+
+                <div class="handleInform">
+                    <label for="date">Selecione a data:</label>
+                    <input type="date" id="date" value="20-03-2022" />
+                </div>
+                <br />
+
+                <div class="div-btn">
+                    <button type="submit">ENVIAR</button>
+                    <button type="reset" class="reset">CLEAR</button>
+                </div>
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="row">
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
